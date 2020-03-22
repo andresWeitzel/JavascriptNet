@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Bucle For</title>
+	<!--<script type="text/javascript">
+   var meses=["cha","che","chi","cho","chu"];
+   for(i=0;i<meses.length;i++){
+   	document.write(meses[i]+"<br/>");
+   }
+
+
+
+	</script>//-->
+
+	<script type="text/javascript">
+  
+  var trabajadores=new Array();
+  var persona="";
+  var contador=0;
+
+  while(persona!="salir"){
+  	persona=prompt("Introduce trabajador");
+  	trabajadores[contador]=persona;
+  	contador++;
+
+  }//Aqui planteo un array con un while
+
+  trabajadores.pop();//Nos oculta la ultima  variable de un array;
+
+  for(var i=0; i<trabajadores.length; i++){
+  	document.write(trabajadores[i]+"<br/>");
+  }
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

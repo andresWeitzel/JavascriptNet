@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>img</title>
+	<meta charset="utf-8">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#carrete img").hide();//el hide selecciona todo 
+
+});
+
+
+</script>
+
+<script type="text/javascript">
+ $(document).ready(function(){
+ 	$("#anuncio").width(500).height(500).text("¡Vende!")
+ 	.hide()
+ 	.fadeIn(3000);
+ });
+
+
+
+</script>	
+	
+</head>
+<body>
+
+	<div id="anuncio" >
+		<h1 >Compra</h1>
+	</div>
+
+	<div id="carrete">
+	<img src="a.jpg" widht="50%" height="40%">
+		<img src="s.jpg"widht="50%" height="40%">
+			<img src="d.jpg" widht="50%" height="40%">
+				<img src="f.jpg" widht="50%" height="40%">
+            </div>
+            //ocultar img con js
+ //            <script type="text/javascript">
+ // var img=document.querySelectorAll("#carrete img");
+ // for(var i=0;i<img.length;i++){
+ // 	img[i].style.visibility="hidden";
+ // }
+	// </script>
+</body>
+</html>

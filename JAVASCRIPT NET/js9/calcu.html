@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>calculadora</title>
+	<meta charset="utf-8">
+	<style type="text/css"></style>
+
+	<script type="text/javascript">
+
+ var num1=prompt("Introduce el primer num");
+ var num2=prompt("Introduce el segundo num");
+
+ if (!isNaN(num1)&&!isNaN(num2)) {//isNaN nos pregunta si no es unnumero, para que luego siga tal cosa, y la exclamacion(!) simplimente nos niega lo preguntado.
+
+   var op=prompt("Que operacion deseas realizar?(suma/resta/mult/div)");
+
+   if (op=="suma") {
+ 	alert(parseInt(num1)+parseInt(num2));//El parseInt nos convierte un valor STRING a un Entero;
+   }
+   else if (op=="resta") {
+ 	alert(parseInt(num1)-parseInt(num2));
+   }
+   else if(op=="div"){
+ 	alert(parseInt(num1)/parseInt(num2));
+   }
+   else if(op=="mult"){
+ 	alert(parseInt(num1)*parseInt(num2));
+   }
+   else{
+ 	alert("No has seleccionado lo propuesto");
+   }
+
+ }
+
+ else{
+ 	if (typeof(num1)=="String"|| typeof(num2)=="String") {//el typeof evalua el tipode dato almacenado en una variable
+ 		alert("No has ingresado o te falto ingresar numeros ");
+ 	}
+ 	else{
+ 		alert("Ha ocurrido un error no identificado");
+ 	}
+ 	
+ }
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

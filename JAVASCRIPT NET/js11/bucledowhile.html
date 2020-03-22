@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title> Bucle Do While I y II(aleatorio)</title>
+	<meta charset="utf-8">
+	
+</head>
+<body>
+	<table width="25%" border="0">
+		<tr>
+			<td>
+				<label for="textfield"></label>
+					<input type="text" name="textfieldd" id="c_mensaje">
+				
+			</td>
+			<td>
+				<label for="textfield2"></label>
+				<input type="text" name="textfield2" id="c_intentos">
+
+			</td>
+
+		</tr>
+
+	</table>
+
+	<script type="text/javascript">
+	var aleatorio=Math.round(Math.random()*10 );//El Math.random nos produce un num aleatorio en decimales;Math.round redondea(osea consigue un num entero);
+	var minum,intentos;
+	minum=0;
+	intentos=0;
+
+	var Mensaje=document.getElementById("c_mensaje");
+	var Intentos=document.getElementById("c_intentos");
+
+	do{
+		minum=prompt("Introduce un num entre 0 y 10");
+		if(aleatorio>minum){
+			
+			Mensaje.value="Mas Alto";
+			Mensaje.style.fontSize="18px";
+		}
+		if(aleatorio<minum){
+			
+			Mensaje.value="Mas Bajo";
+			Mensaje.style.fontSize="18px";
+		}
+
+		intentos++;
+
+		Intentos.value=intentos;
+		Intentos.style.fontSize="18px";
+		Intentos.style.color="red";
+		Intentos.style.textAlign="center";
+
+	}
+
+	while(aleatorio!=minum);
+	Mensaje.value="Correcto";
+	Mensaje.style.color="red";
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

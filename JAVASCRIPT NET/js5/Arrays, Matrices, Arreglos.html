@@ -1,0 +1,78 @@
+<html>
+<head>
+	<title>array</title>
+	<meta chaset="utf-8">
+	<script type="text/javascript">
+	var art=["zapas","camis","panta","calce"];//Forma simplificada del ARRAY.
+
+
+
+	</script>
+</head>
+<body>
+	<h1>Manejando ARRAYS</h1>
+	<script type="text/javascript">
+
+ document.write("<p>El primer articulo es <strong>");
+ document.write(art[0]+"</strong></p>");
+
+ //alert(art.length);//nos marca cuantos elementos hay dentro del array con un aviso
+ document.write("<p/>"+art[art.length-1]+"</p>");//nos indica la ultima posicion del array
+
+ document.write("<p>El ultimo elemento es <strong>");
+ document.write(art[3]+"</strong></p>");
+
+ art.unshift("balon");//Añadir un elemneto al PRINCIPIO a lacantidad que ya tengo.
+ document.write("<p>Casi nos olvidamos!!Agregue este elemento al principio del array:<strong>");
+ document.write(art[0]+"</strong></p>");
+
+ document.write("<p>El art agregado  al final del array es:<strong>");
+ art.push(prompt("Introduce el Art.deseado"));//Añadir un elemento al FINAL a la cantidad que ya tengo mediante una entrada prompt
+ document.write(art[art.length-1]+"</strong></p>");
+ </script>
+
+<h2>Articulos en Total</h2>
+<h3>Array Completo</h3>
+ <script type="text/javascript">
+//AQUI una forma lerda para escribir todos los art. que tengo
+ document.write("<p>"+art[0]+"<br/>");
+ document.write(art[1]+"<br/>");
+ document.write(art[2]+"<br/>");
+ document.write(art[3]+"<br/>");
+ document.write(art[4]+"<br/>");
+ document.write(art[5]+"<br/></p>");
+
+
+
+
+	</script>
+			
+			<h1>Borrando Array</h1>
+<script type="text/javascript">
+
+alert("Se borrara el PRIMER articulo");
+art.shift();
+document.write("<p>"+art[0]+"<br/>");
+ document.write(art[1]+"<br/>");
+ document.write(art[2]+"<br/>");
+ document.write(art[3]+"<br/>");
+ document.write(art[4]+"<br/>");
+ document.write(art[5]+"<br/></p>");
+
+ alert("Se borrara el ULTIMO articulo");
+art.pop();
+document.write("<p>"+art[0]+"<br/>");
+ document.write(art[1]+"<br/>");
+ document.write(art[2]+"<br/>");
+ document.write(art[3]+"<br/>");
+ document.write(art[4]+"<br/>");
+ document.write(art[5]+"<br/></p>");
+
+
+
+
+
+
+</script>
+</body>
+</html>

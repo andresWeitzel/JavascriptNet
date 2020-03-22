@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>calcu(arcaica)</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+
+   var repetir="si";
+
+   
+
+   function suma (num1,num2) {
+   	alert("La suma es:"+(num1+num2));
+   }
+
+ function resta (num1,num2) {
+   	alert("La resta es:"+(num1-num2));
+   }
+
+ function div (num1,num2) {
+   	alert("La division es:"+(num1/num2));
+   }
+
+ function mult (num1,num2) {
+   	alert("La mult es:"+(num1*num2));
+   }
+
+  
+ do{
+   var operador1=parseInt(prompt("Introduce el primer numero"));
+
+   var operador2=parseInt(prompt("Introduce el segundo numero"));
+
+    var operacion=prompt("¿Que operacion deseas realizar?(suma,resta,mult,div)");
+
+   if(operacion=="suma"){
+   	suma(operador1,operador2);
+   }
+   else if(operacion=="resta"){
+   	resta(operador1,operador2);
+   }
+else if(operacion=="mult"){
+   	mult(operador1,operador2);
+   }
+   else if(operacion=="div"){
+   	div(operador1,operador2);
+   }
+   else{
+   	alert("Ha ocurrido un Error");
+   }
+   repetir=prompt("Desea repetir alguna operacion?(si/no)");
+
+
+   }
+   while(repetir=="si");
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
